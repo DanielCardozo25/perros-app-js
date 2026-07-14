@@ -4,47 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App de perros</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <div class="browser-chrome">
-        <div class="browser-header">
-            <div class="browser-controls">
-                <span class="control">←</span>
-                <span class="control">→</span>
-                <span class="control close">✕</span>
-                <span class="control">⌂</span>
-            </div>
-            <div class="address-bar">
-                <span class="lock">🔒</span>
-                <span class="url">https://appdeperros.com</span>
-                <span class="search-icon">🔍</span>
-            </div>
-        </div>
-        <div class="browser-content">
-            <h1>App de perros</h1>
-            <div class="search-container">
-                <div class="search-box">
-                    <span class="search-icon-inline">🔍</span>
-                    <input type="text" placeholder="Ingrese raza" disabled>
-                    <span class="mic-icon">🎤</span>
-                </div>
-                <button class="buscar-btn">Buscar</button>
-            </div>
-            <div class="grid-container">
-                <div class="grid-item">×</div>
-                <div class="grid-item">×</div>
-                <div class="grid-item">×</div>
-                <div class="grid-item">×</div>
-                <div class="grid-item">×</div>
-                <div class="grid-item">×</div>
-                <div class="grid-item">×</div>
-                <div class="grid-item">×</div>
-            </div>
-        </div>
-        <div class="browser-footer">
-            <div class="resize-handle"></div>
-        </div>
-    </div>
+    <header>
+        <h1>App de perros</h1>
+    </header>
+    
+    <main>
+        <label for="ingreso-raza"></label>
+        <input type="text" id="ingreso-raza" name="raza" placeholder="Escribe aqui la raza de perro">
+        <button class="buscar-btn">Buscar</button>
+    </main>
+
+    <footer>
+        <p>Esta app esta desarrollado para conocer las razas de perro</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
